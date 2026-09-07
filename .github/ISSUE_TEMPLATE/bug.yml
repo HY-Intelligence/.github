@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a reproducible defect or regression
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not include credentials, customer data, proprietary imagery, or other sensitive material.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that reproduces the problem.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, application/library version or commit, relevant GPU/driver/runtime, dataset characteristics using non-sensitive identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, screenshots, metrics, or reduced test data. Remove secrets and private information first.
+    validations:
+      required: false
+  - type: textarea
+    id: regression
+    attributes:
+      label: Regression or known-good state
+      description: If known, identify the last version/commit where the behavior worked.
+    validations:
+      required: false
