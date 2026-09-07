@@ -1,0 +1,51 @@
+name: Feature or design proposal
+description: Propose a capability, contract change, or design improvement
+title: "[Proposal] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem and evidence first. Keep implementation details separate from the need when possible.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem or limitation should be addressed, and who or what is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or motivation
+      description: Measurements, examples, references, user scenarios, or constraints that justify the change.
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed direction
+      description: Describe the desired behavior or contract. Implementation details may remain open.
+    validations:
+      required: true
+  - type: textarea
+    id: ownership
+    attributes:
+      label: Ownership and boundaries
+      description: Which layer or component should own this behavior? What responsibilities should remain outside it?
+    validations:
+      required: false
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and migration
+      description: Note any API, schema, data-format, workflow, or behavior compatibility concerns.
+    validations:
+      required: false
+  - type: textarea
+    id: validation
+    attributes:
+      label: Acceptance evidence
+      description: What observable result, test, measurement, or scenario would demonstrate success?
+    validations:
+      required: false
